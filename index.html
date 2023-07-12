@@ -9,5 +9,22 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="Sophea"
+      language-code="km"
+      expand
+    ></df-messenger>
   </body>
+  <script lang="ts">
+    const dfMessenger = document.querySelector("df-messenger");
+    dfMessenger.addEventListener("df-messenger-loaded", (e) => {
+      dfMessenger.shadowRoot
+        .querySelector("df-messenger-chat")
+        .shadowRoot.querySelector("df-messenger-user-input")
+        .shadowRoot.querySelector(".input-box-wrapper > input").placeholder =
+        "Type a message...";
+    });
+  </script>
 </html>
