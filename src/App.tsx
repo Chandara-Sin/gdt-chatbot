@@ -7,16 +7,18 @@ function App() {
   const dfMessenger = document.querySelector("df-messenger");
   dfMessenger?.setAttribute("agent-id", agentID);
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-    </>
+    <div>
+      <a href="#" target="_blank">
+        <img src={viteLogo} className="logo" alt="Vite logo" />
+      </a>
+      <a href="#" target="_blank">
+        <img src={reactLogo} className="logo react" alt="React logo" />
+      </a>
+      {/* <a href="#" target="_blank">
+        <img src={GDTLogo} className="logo" alt="GDT logo" />
+      </a>
+      <p>អគ្គនាយកដ្ឋានពន្ធដារ នៃក្រសួងសេដ្ឋកិច្ច និង ហិរញ្ញវត្ថុ</p> */}
+    </div>
   );
 }
 
