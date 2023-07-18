@@ -3,6 +3,10 @@
 - ### [For Development](#development)
 - ### [Use Docker](#docker)
 
+```sh
+repository: https://github.com/Chandara-Sin/chat-bot.git
+```
+
 ## Development
 
 ### Create `.env` for API
