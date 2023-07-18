@@ -4,7 +4,7 @@
 - ### [Use Docker](#docker)
 
 ```sh
-repository: https://github.com/Chandara-Sin/chat-bot.git
+repository: https://github.com/Chandara-Sin/gdt-chatbot.git
 ```
 
 ## Development
